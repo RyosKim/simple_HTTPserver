@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS interview;
+USE interview;
+
+CREATE TABLE IF NOT EXISTS users(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login_id VARCHAR(30) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    joindate DATETIME,
+    jwt VARCHAR(255) DEFAULT NULL);
